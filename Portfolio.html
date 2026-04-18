@@ -1,0 +1,512 @@
+ <!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chahat Hassnain – Full Stack Developer & CS Student. NAVTTC trainee, showcasing Full Stack projects: Kohat Clinic and Boutique Website." />
+  <meta name="keywords" content="full stack developer, web designer, portfolio, HTML, CSS, JavaScript, PHP, MySQL, Chahat Hassnain, NAVTTC, Kohat Clinic, boutique website" />
+  <meta name="author" content="Chahat Hassnain" />
+  <title>Chahat Hassnain | Full Stack Developer | NAVTTC Trainee</title>
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="Portfolio.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     PARTICLE CANVAS BACKGROUND
+============================================================ -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- ============================================================
+     NAVBAR
+============================================================ -->
+<nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">
+      <span class="logo-bracket">&lt;</span>CH<span class="logo-bracket">/&gt;</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+      <span class="toggler-icon"></span>
+      <span class="toggler-icon"></span>
+      <span class="toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#experience">Education</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        <li class="nav-item ms-lg-3">
+          <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle theme">
+            <i class="bi bi-moon-stars-fill moon-icon"></i>
+            <i class="bi bi-sun-fill sun-icon"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+ <!-- ============================================================
+     HERO SECTION
+============================================================ -->
+<section id="home" class="hero-section">
+  <div class="hero-glow glow-1"></div>
+  <div class="hero-glow glow-2"></div>
+
+  <div class="container hero-content">
+    <div class="row align-items-center min-vh-100">
+      <div class="col-lg-7" data-aos="fade-right">
+        <p class="hero-greeting"><span class="wave">👋</span> Hello, I'm</p>
+        <h1 class="hero-name">Chahat Hassnain</h1>
+
+        <div class="hero-typed-wrapper">
+          <span class="hero-typed-prefix">I'm a </span>
+          <span id="typed-text" class="hero-typed"></span>
+          <span class="hero-cursor">|</span>
+        </div>
+
+        <p class="hero-bio">
+          Full Stack Developer | CS Student (6th Semester) | NAVTTC Web Development Trainee
+          Building end-to-end web applications with modern technologies.
+        </p>
+
+        <div class="hero-cta d-flex flex-wrap gap-3">
+          <a href="#projects" class="btn-primary-custom">
+            <span>View Projects</span>
+            <i class="bi bi-arrow-right-circle"></i>
+          </a>
+          <a href="#contact" class="btn-outline-custom">
+            <span>Contact Me</span>
+            <i class="bi bi-send"></i>
+          </a>
+        </div>
+
+        <div class="hero-social mt-4">
+          <a href="https://github.com/Chahat38" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/chahat-hassnain-a23049271" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="mailto:chahat4902@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+        </div>
+      </div>
+
+      <div class="col-lg-5 d-none d-lg-flex justify-content-center" data-aos="fade-left">
+        <div class="hero-card glass-card">
+          <div class="hero-avatar">
+            <div class="avatar-ring"></div>
+
+            <!-- ✅ IMAGE ADDED HERE -->
+            <div class="avatar-inner">
+              <img src="profile pic.png" alt="Chahat Hassnain" class="avatar-img">
+            </div>
+
+          </div>
+
+          <div class="hero-card-tags">
+            <span class="tag tag-html">Full Stack</span>
+            <span class="tag tag-css">PHP</span>
+            <span class="tag tag-js">MySQL</span>
+            <span class="tag tag-php">NAVTTC</span>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-number" data-target="6">0</span><span>+</span>
+              <span class="stat-label">Projects</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-number" data-target="6">0</span>
+              <span class="stat-label">Semester</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-number" data-target="10">0</span><span>+</span>
+              <span class="stat-label">GitHub Repos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator" aria-label="Scroll down">
+      <span class="scroll-mouse">
+        <span class="scroll-dot"></span>
+      </span>
+      <span class="scroll-text">Scroll Down</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============================================================
+     SKILLS SECTION - Full Stack Focus
+============================================================ -->
+<section id="skills" class="section-padding skills-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-label">What I work with</span>
+      <h2 class="section-title">Full Stack <span class="gradient-text">Skills</span></h2>
+    </div>
+
+    <div class="row g-4">
+      <!-- Skill Bars -->
+      <div class="col-lg-6" data-aos="fade-right">
+        <h4 class="skills-subtitle">Frontend & Backend Proficiency</h4>
+
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="50">
+          <div class="skill-header">
+            <span class="skill-name"><i class="bi bi-filetype-html"></i> HTML5 / CSS3</span>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+        </div>
+
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
+          <div class="skill-header">
+            <span class="skill-name"><i class="bi bi-filetype-js"></i> JavaScript / jQuery</span>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="150">
+          <div class="skill-header">
+            <span class="skill-name"><i class="bi bi-bootstrap-fill"></i> Bootstrap / Responsive</span>
+            <span class="skill-percent">90%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+        </div>
+
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
+          <div class="skill-header">
+            <span class="skill-name"><i class="bi bi-filetype-php"></i> PHP (Core & OOP)</span>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="250">
+          <div class="skill-header">
+            <span class="skill-name"><i class="bi bi-database"></i> MySQL / Database</span>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+        </div>
+
+        <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
+          <div class="skill-header">
+            <span class="skill-name"><i class="bi bi-git"></i> Git & GitHub</span>
+            <span class="skill-percent">75%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+        </div>
+      </div>
+
+      <!-- Skill Cards -->
+      <div class="col-lg-6" data-aos="fade-left">
+        <h4 class="skills-subtitle">Technologies & Tools</h4>
+        <div class="row g-3">
+          <div class="col-4 col-md-3" data-aos="zoom-in" data-aos-delay="50">
+            <div class="skill-card glass-card">
+              <div class="skill-card-icon html-icon"><i class="bi bi-filetype-html"></i></div>
+              <span>HTML5</span>
+            </div>
+          </div>
+          <div class="col-4 col-md-3" data-aos="zoom-in" data-aos-delay="100">
+            <div class="skill-card glass-card">
+              <div class="skill-card-icon css-icon"><i class="bi bi-filetype-css"></i></div>
+              <span>CSS3</span>
+            </div>
+          </div>
+          <div class="col-4 col-md-3" data-aos="zoom-in" data-aos-delay="150">
+            <div class="skill-card glass-card">
+              <div class="skill-card-icon js-icon"><i class="bi bi-filetype-js"></i></div>
+              <span>JavaScript</span>
+            </div>
+          </div>
+          <div class="col-4 col-md-3" data-aos="zoom-in" data-aos-delay="200">
+            <div class="skill-card glass-card">
+              <div class="skill-card-icon bs-icon"><i class="bi bi-bootstrap-fill"></i></div>
+              <span>Bootstrap</span>
+            </div>
+          </div>
+          <div class="col-4 col-md-3" data-aos="zoom-in" data-aos-delay="250">
+            <div class="skill-card glass-card">
+              <div class="skill-card-icon php-icon"><i class="bi bi-filetype-php"></i></div>
+              <span>PHP</span>
+            </div>
+          </div>
+          <div class="col-4 col-md-3" data-aos="zoom-in" data-aos-delay="300">
+            <div class="skill-card glass-card">
+              <div class="skill-card-icon"><i class="bi bi-database"></i></div>
+              <span>MySQL</span>
+            </div>
+          </div>
+          <div class="col-4 col-md-3" data-aos="zoom-in" data-aos-delay="350">
+            <div class="skill-card glass-card">
+              <div class="skill-card-icon git-icon"><i class="bi bi-git"></i></div>
+              <span>Git</span>
+            </div>
+          </div>
+          <div class="col-4 col-md-3" data-aos="zoom-in" data-aos-delay="400">
+            <div class="skill-card glass-card">
+              <div class="skill-card-icon github-icon"><i class="bi bi-github"></i></div>
+              <span>GitHub</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <!-- ============================================================
+     PROJECTS SECTION - Updated with Correct GitHub Repo Links
+============================================================ -->
+<section id="projects" class="section-padding">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-label">What I've built</span>
+      <h2 class="section-title">Full Stack <span class="gradient-text">Projects</span></h2>
+    </div>
+
+    <div class="row g-4">
+      <!-- Project 1: Kohat Clinic - Corrected Link -->
+      <div class="col-md-6 col-xl-6" data-aos="fade-up" data-aos-delay="0">
+        <div class="project-card glass-card">
+          <div class="project-img" style="background: linear-gradient(135deg, #10b981, #059669);">
+            <i class="bi bi-hospital project-icon"></i>
+            <div class="project-overlay">
+              <a href="https://github.com/Chahat38/-clinic-web.git" class="overlay-btn" target="_blank">GitHub <i class="bi bi-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="ptag">HTML</span>
+              <span class="ptag">CSS</span>
+              <span class="ptag">JavaScript</span>
+              <span class="ptag">Bootstrap</span>
+            </div>
+            <h5 class="project-title">Kohat Clinic - Full Stack CMS</h5>
+            <p class="project-desc">Complete clinic management system with patient registration, appointment booking, doctor dashboard, and admin panel. Backend built with PHP & MySQL, frontend with Bootstrap & JS.</p>
+            <div class="project-links">
+              <a href="https://github.com/Chahat38/-clinic-web.git" class="plink" target="_blank"><i class="bi bi-github"></i> GitHub Repository</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2: Boutique Website - Corrected Link -->
+      <div class="col-md-6 col-xl-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-card glass-card">
+          <div class="project-img" style="background: linear-gradient(135deg, #ec4899, #8b5cf6);">
+            <i class="bi bi-bag-heart project-icon"></i>
+            <div class="project-overlay">
+              <a href="https://github.com/Chahat38/--Botique.git" class="overlay-btn" target="_blank">GitHub <i class="bi bi-github"></i></a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="ptag">HTML</span>
+              <span class="ptag">CSS</span>
+              <span class="ptag">JavaScript</span>
+              <span class="ptag">Bootstrap</span>
+            </div>
+            <h5 class="project-title">Boutique E-Commerce Store</h5>
+            <p class="project-desc">Feature-rich boutique website with product catalog, shopping cart, user authentication, and order management. Built with PHP backend and MySQL database.</p>
+            <div class="project-links">
+              <a href="https://github.com/Chahat38/--Botique.git" class="plink" target="_blank"><i class="bi bi-github"></i> GitHub Repository</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================================
+     EDUCATION & TRAINING SECTION
+============================================================ -->
+<section id="experience" class="section-padding experience-section">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-label">My journey</span>
+      <h2 class="section-title">Education & <span class="gradient-text">Training</span></h2>
+    </div>
+
+    <div class="row g-5">
+      <div class="col-lg-12">
+        <h4 class="timeline-col-title"><i class="bi bi-mortarboard-fill"></i> Academic & Professional Development</h4>
+        <div class="timeline">
+
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="0">
+            <div class="timeline-dot timeline-dot-edu"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">2023 – Present</span>
+              <h5>BS Computer Science (6th Semester)</h5>
+              <span class="timeline-company">KUST</span>
+              <p>Currently in 6th semester with focus on Web Development, Database Systems, Software Engineering, and Data Structures.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="100">
+            <div class="timeline-dot timeline-dot-edu" style="background: #f59e0b;"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date"> Present</span>
+              <h5>Web Development Course (NAVTTC)</h5>
+              <span class="timeline-company">NAVTTC - National Vocational & Technical Training Commission</span>
+              <p>Comprehensive training in Full Stack Web Development covering PHP, MySQL, JavaScript, Bootstrap, and modern web technologies. Building industry-ready projects under expert guidance.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item" data-aos="fade-right" data-aos-delay="200">
+            <div class="timeline-dot timeline-dot-edu"></div>
+            <div class="timeline-content glass-card">
+              <span class="timeline-date">2025</span>
+              <h5>Full Stack Development Certification</h5>
+              <span class="timeline-company">Self-Learning & Coursera</span>
+              <p>Completed multiple courses in PHP OOP, MySQL database design, REST APIs, and frontend frameworks. All knowledge applied to real-world projects on GitHub.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACT SECTION
+============================================================ -->
+<section id="contact" class="section-padding">
+  <div class="container">
+    <div class="section-header" data-aos="fade-up">
+      <span class="section-label">Let's talk</span>
+      <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+    </div>
+
+    <div class="row g-5 align-items-start">
+      <!-- Contact Info -->
+      <div class="col-lg-5" data-aos="fade-right">
+        <p class="contact-intro">
+          I'm a Full Stack Developer and NAVTTC trainee, open to internships, freelance projects, and full-time opportunities. 
+          Let's connect if you need a dedicated developer who can handle both frontend and backend!
+        </p>
+
+        <div class="contact-info-list">
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <span class="contact-label">Email</span>
+              <a href="mailto:chahat4902@gmail.com" class="contact-value">chahat4902@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <span class="contact-label">Location</span>
+              <span class="contact-value">Pakistan</span>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-icon"><i class="bi bi-calendar-check-fill"></i></div>
+            <div>
+              <span class="contact-label">Availability</span>
+              <span class="contact-value available-badge">Open for opportunities</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-social">
+          <a href="https://github.com/Chahat38" target="_blank" class="social-btn"><i class="bi bi-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/chahat-hassnain-a23049271" target="_blank" class="social-btn"><i class="bi bi-linkedin"></i> LinkedIn</a>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="col-lg-7" data-aos="fade-left">
+        <form id="contact-form" class="contact-form glass-card" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label class="form-label-custom">Your Name</label>
+                <input type="text" class="form-input" placeholder="name" required />
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <label class="form-label-custom">Email Address</label>
+                <input type="email" class="form-input" placeholder="you@example.com" required />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label class="form-label-custom">Subject</label>
+                <input type="text" class="form-input" placeholder="Project Inquiry" />
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label class="form-label-custom">Message</label>
+                <textarea class="form-input form-textarea" rows="5" placeholder="Tell me about your project..." required></textarea>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn-primary-custom w-100" id="send-btn">
+                <span>Send Message</span>
+                <i class="bi bi-send-fill"></i>
+              </button>
+              <div id="form-success" class="form-success-msg d-none">
+                <i class="bi bi-check-circle-fill"></i> Message sent! I'll get back to you soon.
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <a class="footer-logo" href="#home">
+        <span class="logo-bracket">&lt;</span>CH<span class="logo-bracket">/&gt;</span>
+      </a>
+      <p class="footer-copy">
+        Designed & built with <i class="bi bi-heart-fill footer-heart"></i> by <span class="gradient-text">Chahat Hassnain</span> | Full Stack Developer | NAVTTC Trainee &copy; 2025
+      </p>
+      <div class="footer-social">
+        <a href="https://github.com/Chahat38" target="_blank" aria-label="GitHub"><i class="bi bi-github"></i></a>
+        <a href="https://www.linkedin.com/in/chahat-hassnain-a23049271" target="_blank" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:chahat4902@gmail.com" aria-label="Email"><i class="bi bi-envelope-fill"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to top button -->
+<button id="scroll-top" aria-label="Scroll to top">
+  <i class="bi bi-chevron-up"></i>
+</button>
+
+<!-- Scripts -->
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="Portfolio.js"></script>
+</body>
+</html>
